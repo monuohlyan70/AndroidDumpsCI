@@ -46,6 +46,7 @@ jobs:
 
               sudo bash setup.sh
               sudo apt install -y f2fs-tools
+              sudo apt install neofetch -y
               mkdir -p ~/.ssh
               ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
               ssh-keyscan -t rsa gitlab.com >> ~/.ssh/known_hosts
