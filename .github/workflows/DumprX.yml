@@ -87,6 +87,7 @@ jobs:
          run: |
               ./dumper.sh "$ROM_URL"
        - name: Telegram Notification
+         if: ${{ cancelled() || failure() }}
          continue-on-error: true
          uses: xinthink/action-telegram@v1.1
          with:
