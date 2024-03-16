@@ -86,3 +86,11 @@ jobs:
          working-directory: DumprX
          run: |
               ./dumper.sh "$ROM_URL"
+       - name: Telegram Notification
+         continue-on-error: true
+         uses: xinthink/action-telegram@v1.1
+         with:
+          chatId: ${{ secrets.TELEGRAM_TO }}
+          botToken: ${{ secrets.TELEGRAM_TOKEN }}
+          jobStatus: ${{ job.status }}
+          skipSuccess: true
