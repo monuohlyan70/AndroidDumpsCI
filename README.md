@@ -10,4 +10,4 @@ This CI uses the [firmware_dumper](https://github.com/AndroidDumpsCI/firmware_du
 
 You can join our Telegram channel to receive updates of new dumps.
 
-- [@AndroidDumpsCI](https://t.me/AndroidDumpsCI)
+- [@OkBuddyGSI](https://t.me/okbuddygsi_stuff)
